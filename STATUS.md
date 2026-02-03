@@ -1,5 +1,5 @@
 # Heartbeat Status Report
-## 🦉 Last Checked: 2026-02-03 12:09:20 UTC
+## 🦉 Last Checked: 2026-02-03 12:39:34 UTC
 
 **Status:** 🟢 OK: All systems nominal.
 
@@ -10,12 +10,12 @@
 
 ### 🧠 Memory Usage (free -h)
 ```
-Mem:          7.8Gi       776Mi       547Mi       1.0Mi       6.5Gi       6.7Gi
+Mem:          7.8Gi       766Mi       556Mi       1.0Mi       6.5Gi       6.7Gi
 ```
 
 ### 📈 Uptime & Load Average
 ```
- 12:09:20 up 1 day, 55 min,  2 users,  load average: 0.01, 0.04, 0.05
+ 12:39:34 up 1 day,  1:25,  2 users,  load average: 0.01, 0.01, 0.00
 ```
 
 ### ⚙️ Processes
@@ -34,17 +34,17 @@ Overview
 │ Tailscale       │ off                                                                                               │
 │ Channel         │ stable (default)                                                                                  │
 │ Update          │ available · pnpm · npm update 2026.2.1                                                            │
-│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 48ms · auth token · openclaw (192.168.  │
+│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 40ms · auth token · openclaw (192.168.  │
 │                 │ 18.182) app unknown linux 5.4.0-216-generic                                                       │
 │ Gateway service │ systemd installed · enabled · running (pid 69616, state active)                                   │
 │ Node service    │ systemd not installed                                                                             │
-│ Agents          │ 1 · no bootstraps · sessions 11 · default main active just now                                    │
+│ Agents          │ 1 · no bootstraps · sessions 10 · default main active just now                                    │
 │ Memory          │ 6 files · 24 chunks · dirty · sources memory · plugin memory-core · vector ready · fts ready ·    │
 │                 │ cache on (24)                                                                                     │
 │ Probes          │ skipped (use --deep)                                                                              │
 │ Events          │ none                                                                                              │
 │ Heartbeat       │ 30m (main)                                                                                        │
-│ Sessions        │ 11 active · default openrouter/auto (128k ctx) · ~/.openclaw/agents/main/sessions/sessions.json   │
+│ Sessions        │ 10 active · default openrouter/auto (128k ctx) · ~/.openclaw/agents/main/sessions/sessions.json   │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 Security audit
@@ -66,16 +66,16 @@ Sessions
 ┌────────────────────────────────────────────────────────┬────────┬──────────┬─────────────────────┬──────────────────┐
 │ Key                                                    │ Kind   │ Age      │ Model               │ Tokens           │
 ├────────────────────────────────────────────────────────┼────────┼──────────┼─────────────────────┼──────────────────┤
-│ agent:main:main                                        │ direct │ just now │ openrouter/auto     │ 87k/128k (68%)   │
-│ agent:main:subagent:154de91c-5a…                       │ direct │ 1m ago   │ gemini-flash-latest │ 158k/1049k (15%) │
-│ agent:main:subagent:0101d1ec-a9…                       │ direct │ 19m ago  │ openrouter/auto     │ 7.0k/128k (5%)   │
-│ agent:main:subagent:57941344-bd…                       │ direct │ 23m ago  │ openrouter/auto     │ 25k/128k (20%)   │
-│ agent:main:subagent:7ffc1581-84…                       │ direct │ 37m ago  │ gemini-flash-latest │ 122k/1049k (12%) │
+│ agent:main:main                                        │ direct │ just now │ openrouter/auto     │ 106k/128k (82%)  │
+│ agent:main:subagent:0101d1ec-a9…                       │ direct │ just now │ openrouter/auto     │ 30k/128k (23%)   │
+│ agent:main:subagent:bd9e18f1-90…                       │ direct │ 29m ago  │ gemini-flash-latest │ 26k/1049k (2%)   │
+│ agent:main:subagent:154de91c-5a…                       │ direct │ 31m ago  │ gemini-flash-latest │ 158k/1049k (15%) │
 │ agent:main:subagent:69adda44-fb…                       │ direct │ 2h ago   │ gemini-flash-latest │ 12k/1049k (1%)   │
-│ agent:main:cron:d6379119-aa72-4…                       │ direct │ 2h ago   │ gemini-flash-latest │ 30k/1049k (3%)   │
-│ agent:main:cron:e07e4931-0ff3-4…                       │ direct │ 2h ago   │ gemini-flash-latest │ 31k/1049k (3%)   │
+│ agent:main:cron:d6379119-aa72-4…                       │ direct │ 3h ago   │ gemini-flash-latest │ 30k/1049k (3%)   │
+│ agent:main:cron:e07e4931-0ff3-4…                       │ direct │ 3h ago   │ gemini-flash-latest │ 31k/1049k (3%)   │
 │ agent:main:cron:112b9477-4921-4…                       │ direct │ 3h ago   │ gemini-flash-latest │ 19k/1049k (2%)   │
 │ agent:main:subagent:b715d665-ef…                       │ direct │ 3h ago   │ gemini-flash-latest │ 17k/1049k (2%)   │
+│ agent:main:cron:2964fb0e-d8ea-4…                       │ direct │ 24h ago  │ gemini-flash-latest │ 31k/1049k (3%)   │
 └────────────────────────────────────────────────────────┴────────┴──────────┴─────────────────────┴──────────────────┘
 
 FAQ: https://docs.openclaw.ai/faq
