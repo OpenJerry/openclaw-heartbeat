@@ -1,25 +1,25 @@
 # Heartbeat Status Report
-## 🦉 Last Checked: 2026-02-03 10:54:52 UTC
+## 🦉 Last Checked: 2026-02-03 11:43:48 UTC
 
 **Status:** 🟢 OK: All systems nominal.
 
 ### 💾 Disk Health (df -h /)
 ```
-/dev/mapper/ubuntu--vg-ubuntu--lv   62G   13G   47G  21% /
+/dev/mapper/ubuntu--vg-ubuntu--lv   62G   14G   46G  23% /
 ```
 
 ### 🧠 Memory Usage (free -h)
 ```
-Mem:          7.8Gi       826Mi       584Mi       1.0Mi       6.4Gi       6.7Gi
+Mem:          7.8Gi       756Mi       568Mi       1.0Mi       6.5Gi       6.7Gi
 ```
 
 ### 📈 Uptime & Load Average
 ```
- 10:54:52 up 23:40,  2 users,  load average: 0.00, 0.01, 0.00
+ 11:43:48 up 1 day, 29 min,  2 users,  load average: 0.01, 0.15, 0.23
 ```
 
 ### ⚙️ Processes
-Running Processes: **154**
+Running Processes: **159**
 
 ### 🦞 OpenClaw Runtime Status
 ```
@@ -34,24 +34,21 @@ Overview
 │ Tailscale       │ off                                                                                               │
 │ Channel         │ stable (default)                                                                                  │
 │ Update          │ available · pnpm · npm update 2026.2.1                                                            │
-│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 66ms · auth token · openclaw (192.168.  │
+│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 33ms · auth token · openclaw (192.168.  │
 │                 │ 18.182) app unknown linux 5.4.0-216-generic                                                       │
-│ Gateway service │ systemd installed · enabled · running (pid 60727, state active)                                   │
+│ Gateway service │ systemd installed · enabled · running (pid 69616, state active)                                   │
 │ Node service    │ systemd not installed                                                                             │
-│ Agents          │ 1 · no bootstraps · sessions 11 · default main active just now                                    │
+│ Agents          │ 1 · no bootstraps · sessions 10 · default main active just now                                    │
 │ Memory          │ 6 files · 24 chunks · dirty · sources memory · plugin memory-core · vector ready · fts ready ·    │
 │                 │ cache on (24)                                                                                     │
 │ Probes          │ skipped (use --deep)                                                                              │
 │ Events          │ none                                                                                              │
 │ Heartbeat       │ 30m (main)                                                                                        │
-│ Sessions        │ 11 active · default gemini-flash-latest (1049k ctx) · ~/.openclaw/agents/main/sessions/sessions.  │
-│                 │ json                                                                                              │
+│ Sessions        │ 10 active · default openrouter/auto (128k ctx) · ~/.openclaw/agents/main/sessions/sessions.json   │
 └─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 Security audit
-Summary: 1 critical · 1 warn · 1 info
-  CRITICAL Elevated exec allowlist contains wildcard
-    tools.elevated.allowFrom.webchat includes "*" which effectively approves everyone on that channel for elevated mode.
+Summary: 0 critical · 1 warn · 1 info
   WARN Reverse proxy headers are not trusted
     gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client c…
     Fix: Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only.
@@ -69,16 +66,16 @@ Sessions
 ┌────────────────────────────────────────────────────────┬────────┬──────────┬─────────────────────┬──────────────────┐
 │ Key                                                    │ Kind   │ Age      │ Model               │ Tokens           │
 ├────────────────────────────────────────────────────────┼────────┼──────────┼─────────────────────┼──────────────────┤
-│ agent:main:main                                        │ direct │ just now │ gemini-flash-latest │ 101k/1049k (10%) │
-│ agent:main:subagent:71a08b47-85…                       │ direct │ 5m ago   │ gemini-flash-latest │ 65k/1049k (6%)   │
-│ agent:main:subagent:08517f16-0f…                       │ direct │ 5m ago   │ gemini-flash-latest │ 40k/1049k (4%)   │
-│ agent:main:subagent:820c46b7-05…                       │ direct │ 27m ago  │ gemini-flash-latest │ 54k/1049k (5%)   │
-│ agent:main:subagent:69adda44-fb…                       │ direct │ 28m ago  │ gemini-flash-latest │ 10k/1049k (1%)   │
-│ agent:main:subagent:69adda44-fb…                       │ direct │ 28m ago  │ gemini-flash-latest │ 12k/1049k (1%)   │
-│ agent:main:cron:d6379119-aa72-4…                       │ direct │ 54m ago  │ gemini-flash-latest │ 30k/1049k (3%)   │
-│ agent:main:cron:e07e4931-0ff3-4…                       │ direct │ 55m ago  │ gemini-flash-latest │ 31k/1049k (3%)   │
-│ agent:main:cron:112b9477-4921-4…                       │ direct │ 1h ago   │ gemini-flash-latest │ 19k/1049k (2%)   │
-│ agent:main:subagent:b715d665-ef…                       │ direct │ 1h ago   │ gemini-flash-latest │ 17k/1049k (2%)   │
+│ agent:main:main                                        │ direct │ just now │ openrouter/auto     │ 0.0k/128k (0%)   │
+│ agent:main:subagent:57941344-bd…                       │ direct │ 3m ago   │ openrouter/auto     │ 0.0k/128k (0%)   │
+│ agent:main:subagent:7ffc1581-84…                       │ direct │ 12m ago  │ gemini-flash-latest │ 122k/1049k (12%) │
+│ agent:main:subagent:71a08b47-85…                       │ direct │ 48m ago  │ gemini-flash-latest │ 31k/1049k (3%)   │
+│ agent:main:subagent:69adda44-fb…                       │ direct │ 1h ago   │ gemini-flash-latest │ 12k/1049k (1%)   │
+│ agent:main:cron:d6379119-aa72-4…                       │ direct │ 2h ago   │ gemini-flash-latest │ 30k/1049k (3%)   │
+│ agent:main:cron:e07e4931-0ff3-4…                       │ direct │ 2h ago   │ gemini-flash-latest │ 31k/1049k (3%)   │
+│ agent:main:cron:112b9477-4921-4…                       │ direct │ 2h ago   │ gemini-flash-latest │ 19k/1049k (2%)   │
+│ agent:main:subagent:b715d665-ef…                       │ direct │ 2h ago   │ gemini-flash-latest │ 17k/1049k (2%)   │
+│ agent:main:cron:2964fb0e-d8ea-4…                       │ direct │ 23h ago  │ gemini-flash-latest │ 31k/1049k (3%)   │
 └────────────────────────────────────────────────────────┴────────┴──────────┴─────────────────────┴──────────────────┘
 
 FAQ: https://docs.openclaw.ai/faq
