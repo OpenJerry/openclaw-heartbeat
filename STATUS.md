@@ -1,5 +1,5 @@
 # Heartbeat Status Report
-## 🦉 Last Checked: 2026-02-05 08:03:03 UTC
+## 🦉 Last Checked: 2026-02-05 08:33:03 UTC
 
 **Status:** 🟢 OK: All systems nominal.
 
@@ -10,12 +10,12 @@
 
 ### 🧠 Memory Usage (free -h)
 ```
-Mem:          7.8Gi       835Mi       544Mi       1.0Mi       6.4Gi       6.6Gi
+Mem:          7.8Gi       844Mi       535Mi       1.0Mi       6.4Gi       6.6Gi
 ```
 
 ### 📈 Uptime & Load Average
 ```
- 08:03:03 up 2 days, 20:48,  1 user,  load average: 0.06, 0.02, 0.00
+ 08:33:03 up 2 days, 21:18,  1 user,  load average: 0.00, 0.00, 0.00
 ```
 
 ### ⚙️ Processes
@@ -33,8 +33,8 @@ Overview
 │ OS              │ linux 5.4.0-216-generic (x64) · node 22.22.0                                                      │
 │ Tailscale       │ off                                                                                               │
 │ Channel         │ stable (default)                                                                                  │
-│ Update          │ available · pnpm · npm update 2026.2.2-3                                                          │
-│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 32ms · auth token · openclaw (192.168.  │
+│ Update          │ available · pnpm · npm update 2026.2.3-1                                                          │
+│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 36ms · auth token · openclaw (192.168.  │
 │                 │ 18.182) app unknown linux 5.4.0-216-generic                                                       │
 │ Gateway service │ systemd installed · enabled · running (pid 69616, state active)                                   │
 │ Node service    │ systemd not installed                                                                             │
@@ -66,19 +66,19 @@ Sessions
 ┌──────────────────────────────────────────────────────────┬────────┬──────────┬─────────────────────┬────────────────┐
 │ Key                                                      │ Kind   │ Age      │ Model               │ Tokens         │
 ├──────────────────────────────────────────────────────────┼────────┼──────────┼─────────────────────┼────────────────┤
-│ agent:main:main                                          │ direct │ just now │ openrouter/auto     │ 20k/128k (15%) │
-│ agent:main:cron:112b9477-4921-4…                         │ direct │ 1h ago   │ openrouter/auto     │ 14k/128k (11%) │
-│ agent:main:cron:d6379119-aa72-4…                         │ direct │ 22h ago  │ openrouter/auto     │ 0.0k/128k (0%) │
-│ agent:main:cron:e07e4931-0ff3-4…                         │ direct │ 22h ago  │ openrouter/auto     │ 14k/128k (11%) │
+│ agent:main:main                                          │ direct │ just now │ openrouter/auto     │ 20k/128k (16%) │
+│ agent:main:cron:112b9477-4921-4…                         │ direct │ 2h ago   │ openrouter/auto     │ 14k/128k (11%) │
+│ agent:main:cron:d6379119-aa72-4…                         │ direct │ 23h ago  │ openrouter/auto     │ 0.0k/128k (0%) │
+│ agent:main:cron:e07e4931-0ff3-4…                         │ direct │ 23h ago  │ openrouter/auto     │ 14k/128k (11%) │
 │ agent:main:subagent:69adda44-fb…                         │ direct │ 46h ago  │ gemini-flash-latest │ 12k/1049k (1%) │
-│ agent:main:subagent:b715d665-ef…                         │ direct │ 46h ago  │ gemini-flash-latest │ 17k/1049k (2%) │
+│ agent:main:subagent:b715d665-ef…                         │ direct │ 47h ago  │ gemini-flash-latest │ 17k/1049k (2%) │
 │ agent:main:cron:2964fb0e-d8ea-4…                         │ direct │ 3d ago   │ gemini-flash-latest │ 31k/1049k (3%) │
 └──────────────────────────────────────────────────────────┴────────┴──────────┴─────────────────────┴────────────────┘
 
 FAQ: https://docs.openclaw.ai/faq
 Troubleshooting: https://docs.openclaw.ai/troubleshooting
 
-Update available (npm 2026.2.2-3). Run: openclaw update
+Update available (npm 2026.2.3-1). Run: openclaw update
 
 Next steps:
   Need to share?      openclaw status --all
